@@ -1,0 +1,159 @@
+PDS_VERSION_ID                   = PDS3
+
+/* FILE DATA ELEMENTS */
+
+RECORD_TYPE                      = FIXED_LENGTH
+RECORD_BYTES                     = 616
+FILE_RECORDS                     = 31718
+
+/* POINTERS TO DATA OBJECTS */
+
+^REMS_SCIENCE_TABLE              = ("RME_606776523ESE23580000000ACQ____M1.TAB"
+                                    ,1)
+
+/* IDENTIFICATION DATA ELEMENTS */
+
+DATA_SET_ID                      = "MSL-M-REMS-2-EDR-V1.0"
+DATA_SET_NAME                    = "MSL MARS ROVER ENVIRONMENTAL
+                                   MONITORING STATION 2 EDR V1.0"
+COMMAND_SEQUENCE_NUMBER          = 13
+INSTRUMENT_HOST_ID               = MSL
+INSTRUMENT_HOST_NAME             = "MARS SCIENCE LABORATORY"
+INSTRUMENT_ID                    = REMS
+INSTRUMENT_NAME                  = "ROVER ENVIRONMENTAL MONITORING
+                                   STATION"
+INSTRUMENT_TYPE                  = ENVIRONMENTAL_STATION
+MSL:LOCAL_MEAN_SOLAR_TIME        = "Sol-02358M00:01:02.372"
+LOCAL_TRUE_SOLAR_TIME            = "23:20:17"
+MISSION_NAME                     = "MARS SCIENCE LABORATORY"
+MISSION_PHASE_NAME               = "EXTENDED SURFACE MISSION"
+OBSERVATION_ID                   = UNK
+PLANET_DAY_NUMBER                = 2358
+PRODUCER_INSTITUTION_NAME        = "MULTIMISSION INSTRUMENT PROCESSING LAB,
+                                   JET PROPULSION LAB"
+PRODUCT_CREATION_TIME            = 2019-05-02T08:29:42.000
+PRODUCT_ID                       = "RME_606776523ESE23580000000ACQ____M1"
+PRODUCT_VERSION_ID               = "V1.0 D-38116"
+PRODUCT_TYPE                     = REMS_EDR
+RELEASE_ID                       = "0021"
+MSL:REQUEST_ID                   = "0"
+ROVER_MOTION_COUNTER             = (75,750,6,0,0,0,154,86,0,0)
+ROVER_MOTION_COUNTER_NAME        = (SITE, DRIVE, POSE, ARM, CHIMRA,
+                                   DRILL, RSM, HGA, DRT, IC)
+SEQUENCE_ID                      = "rems03003"
+SEQUENCE_VERSION_ID              = "9"
+MSL:ACTIVE_FLIGHT_STRING_ID      = B
+SOLAR_LONGITUDE                  = 0.957518
+SPACECRAFT_CLOCK_CNT_PARTITION   = 1
+SPACECRAFT_CLOCK_START_COUNT     = "606776587.000"
+SPACECRAFT_CLOCK_STOP_COUNT      = "606865297.000"
+START_TIME                       = 2019-03-25T09:38:06.436
+STOP_TIME                        = 2019-03-26T10:16:37.274
+TARGET_NAME                      = MARS
+TARGET_TYPE                      = PLANET
+
+/* TELEMETRY DATA ELEMENTS */
+
+APPLICATION_PROCESS_ID           = 509
+APPLICATION_PROCESS_NAME         = "RemsScienceAndEng"
+MSL:VIRTUAL_CHANNEL_ID           = "32"
+MSL:COMMUNICATION_SESSION_ID     = "43580"
+DOWNLOAD_PRIORITY                = 53
+EARTH_RECEIVED_START_TIME        = 2019-03-26T06:35:04.273
+MSL:EXPECTED_TRANSMISSION_PATH   = "3851"
+MSL:AUTO_DELETE_FLAG             = "FALSE"
+MSL:TRANSMISSION_PATH            = "65535"
+FLIGHT_SOFTWARE_VERSION_ID       = "208889339"
+MSL:FLIGHT_SOFTWARE_MODE         = "8"
+MSL:PRODUCT_COMPLETION_STATUS    = COMPLETE_CHECKSUM_PASS
+MSL:PRODUCT_TAG                  = "1"
+MSL:SEQUENCE_EXECUTION_COUNT     = 1
+RECEIVED_PACKETS                 = 0
+SPICE_FILE_NAME                  = "chronos.msl"
+TELEMETRY_PROVIDER_ID            = MPCS_MSL_DP
+MSL:TELEMETRY_SOURCE_CHECKSUM    = 29453
+MSL:TELEMETRY_SOURCE_SCLK_START  = "606841179.50698"
+MSL:TELEMETRY_SOURCE_SIZE        = 1046400
+MSL:TELEMETRY_SOURCE_START_TIME  = 2019-085T03:34:39.820
+TELEMETRY_SOURCE_NAME       = {"RemsScienceAndEng_0606788882-58363-2.dat"
+                              ,"RemsScienceAndEng_0606789283-34087-2.dat"
+                              ,"RemsScienceAndEng_0606841179-50698-2.dat"
+                              ,"RemsScienceAndEng_0606841582-41901-4.dat"
+                              ,"RemsScienceAndEng_0606841982-50077-4.dat"
+                              ,"RemsScienceAndEng_0606874482-50741-4.dat"
+                              ,"RemsScienceAndEng_0606874882-58670-4.dat"
+                              ,"RemsScienceAndEng_0606875283-01314-2.dat"}
+MSL:TELEMETRY_SOURCE_TYPE        = "DATA PRODUCT"
+MSL:TELEMETRY_SOURCE_HOST_NAME   = mslsmsampcs1
+EXPECTED_PACKETS                 = 0
+
+/* HISTORY DATA ELEMENTS */
+
+GROUP                            = MSLEDRGEN_HISTORY_PARMS
+ SOFTWARE_NAME                   = MSLEDRGEN
+ SOFTWARE_VERSION_ID             = "V1.0 04-01-2011"
+ PROCESSING_HISTORY_TEXT         = "CODMAC LEVEL 1 TO LEVEL 2 CONVERSION
+                                    VIA JPL/MIPL MSLEDRGEN"
+END_GROUP                        = MSLEDRGEN_HISTORY_PARMS
+
+/* COORDINATE SYSTEM STATE: ROVER AT THE END */
+
+GROUP                            = ROVER_COORDINATE_SYSTEM_PARMS
+ COORDINATE_SYSTEM_NAME          = ROVER_FRAME
+ COORDINATE_SYSTEM_INDEX         = (75,750,6,0,0,0,154,86,0,0)
+ COORDINATE_SYSTEM_INDEX_NAME    = (SITE, DRIVE, POSE, ARM, CHIMRA,
+                                   DRILL, RSM, HGA, DRT, IC)
+ ORIGIN_OFFSET_VECTOR            = (53.6331,47.2398,2.81369)
+ ORIGIN_ROTATION_QUATERNION   = (0.0239645,-0.0032000,-0.1080166,0.9938551)
+ POSITIVE_AZIMUTH_DIRECTION      = CLOCKWISE
+ POSITIVE_ELEVATION_DIRECTION    = UP
+ REFERENCE_COORD_SYSTEM_NAME     = SITE_FRAME
+ REFERENCE_COORD_SYSTEM_INDEX    = 75
+END_GROUP                        = ROVER_COORDINATE_SYSTEM_PARMS
+
+/* ARTICULATION DEVICE STATE: REMOTE SENSING MAST */
+
+GROUP                            = RSM_ARTICULATION_STATE_PARMS
+ ARTICULATION_DEVICE_ID          = RSM
+ ARTICULATION_DEVICE_NAME        = "REMOTE SENSING MAST"
+ ARTICULATION_DEVICE_ANGLE       = (3.1591914 <rad>, 0.7506444 <rad>)
+ ARTICULATION_DEVICE_ANGLE_NAME  = (AZIMUTH, ELEVATION)
+END_GROUP                        = RSM_ARTICULATION_STATE_PARMS
+
+/* ARTICULATION DEVICE STATE: ROBOTIC ARM AT THE END (DP CREATION) */
+
+GROUP                            = ARM_ARTICULATION_STATE_PARMS
+ ARTICULATION_DEVICE_ID          = ARM
+ ARTICULATION_DEVICE_NAME        = ROBOTIC_ARM
+ ARTICULATION_DEVICE_ANGLE       = (1.5722353 <rad>, -0.2777731 <rad>, 
+                                    -2.8162930 <rad>, 3.1211066 <rad>, 
+                                    0.5938423 <rad>)
+ ARTICULATION_DEVICE_ANGLE_NAME  = ("JOINT 1 SHOULDER AZIMUTH",
+                                   "JOINT 2 SHOULDER ELEVATION",
+                                   "JOINT 3 ELBOW-ENCODER",
+                                   "JOINT 4 WRIST-ENCODER",
+                                   "JOINT 5 TURRET-ENCODER")
+END_GROUP                        = ARM_ARTICULATION_STATE_PARMS
+
+
+/* DATA OBJECT DEFINITION DESCRIPTIONS */
+
+/* REMS SCIENCE AND ENGINEERING OBJECT */
+
+OBJECT                           = REMS_SCIENCE_TABLE
+   NAME                          = REMS_SCIENCE
+   INTERCHANGE_FORMAT            = ASCII
+   ROWS                          = 31718
+   COLUMNS                       = 92
+   ROW_BYTES                     = 616
+   DESCRIPTION                   = "
+    This table contains science frame(s) associated instrument
+    data as observed by the Mars Science Laboratory (MSL)
+    Rover Environmental Monitoring Station (REMS).
+
+    The complete column definitions are contained in an external file
+    found in the LABEL directory of the archive volume.
+    "
+   ^STRUCTURE                    = "ACQ.FMT"
+END_OBJECT                       = REMS_SCIENCE_TABLE
+END
